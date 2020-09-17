@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+   
+   <link href="./static/mui/css/mui.min.css" rel="stylesheet"/>
+    <link href="./static/mui/css/mui.dtpicker.css" rel="stylesheet"/>
+    <link href="./static/mui/css/mui.picker.min.css" rel="stylesheet"/>
+    <link href="./static/mui/css/mui.poppicker.css" rel="stylesheet"/>
+    <link href="./static/mui/css/app.css" rel="stylesheet"/>
+    <link href="./static/css/animate.css" rel="stylesheet"/>
+    <link href="./static/css/iconfont.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./static/css/public.css"/>
+    <link href="./static/mui/css/icons-extra.css" rel="stylesheet"/>
+   <!-- <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_692772_mn7jjgjw22.css"/>-->
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_692772_2ssrugtma8u.css"/>
+	 
+	 <!--<script src="http://api.map.baidu.com/api?v=2.0&ak=484GfkeWoP6dkczrOSicxYwQmpoVkVMb"></script>-->
+	 <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ff809f010d1fa5070805d3998533a1ab"></script>
+	 <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=be7c59b7738bfbb6aef99a5f95846777&plugin=AMap.Driving"></script>
+	 <script src='https://webapi.amap.com/ui/1.0/main.js?v=1.0.11'></script><!--高德地图海量点ui组件-->
+	 <!--<script src="http://at.alicdn.com/t/font_692772_ox5kqb17lcf.js"></script>-->
+    <script src="./static/mui/js/mui.js"></script>
+    <script src="./static/mui/js/mui.jsonp.js"></script>
+    <script src="./static/mui/js/mui.picker.min.js"></script>
+    <script src="./static/mui/js/mui.poppicker.js"></script>
+    <script src="./static/mui/js/mui.zoom.js"></script>
+    <script src="./static/mui/js/mui.previewimage.js"></script>
+     <script src="./static/mui/js/mui.pullToRefresh.js"></script>
+    <script src="./static/mui/js/mui.pullToRefresh.material.js"></script>
+    
+    <script src="./static/js/pubilc.js"></script>
+    <script src="./static/js/common.js"></script>
+    <script src="./static/js/easyPlugin.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/coty.js"></script>
+    <script src="static/js/jquery.qrcode.js"></script>
+    <script src="static/js/utf.js"></script>
+    <script src="static/js/rsa.js"></script>
+    <script src="static/js/calendar.js"></script>
+    <script src="static/js/coordtransform.js"></script><!--坐标转换-->
+    
+    <script src='static/js/c3photocrop.js'></script>
+    <script src="https://push-static.dbankcdn.com/hms-messaging.js"></script>
+<script>
+    //Your web app's hms configuration
+    var hmsConfig = {
+        apiKey:"5BqUqgu_kz1tBcs-k8o4PEYpT5JzPFLtt3-eGKqw",
+        appId:"102038717"
+    };
+    //Initialize Hms
+    hms.initializeApp(hmsConfig);
+    const messaging = hms.messaging();
+    messaging.usePublicVapidKey(
+        "BJ3vQKfW57C3qbLZQ2yuE6qAKwTw88pxDGAfz2uEeIdRgCGqBDS1Bpk9M_AulN21ElzcoLAIWUmBsKvBLc8mQ_M");
+
+    messaging.onMessage((payload) => {
+        console.log('Message received. ', payload);
+    });
+</script>
+    <title></title>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+<style type="text/css">
+       .amap-logo{
+       display: none;
+       opacity:0 !important;
+       }
+       .amap-copyright {
+           opacity:0;
+       }
+   </style>
+</html>
